@@ -1,13 +1,7 @@
-import { useAITeacher } from "@/hooks/useAITeacher";
+
 import { useEffect, useRef } from "react";
 
 export const MessagesList = () => {
-  const messages = useAITeacher((state) => state.messages);
-  const playMessage = useAITeacher((state) => state.playMessage);
-  const { currentMessage } = useAITeacher();
-  const english = useAITeacher((state) => state.english);
-  const furigana = useAITeacher((state) => state.furigana);
-  const classroom = useAITeacher((state) => state.classroom);
 
   const container = useRef();
 

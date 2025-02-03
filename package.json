@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.99.3",
-    "@react-three/fiber": "^8.15.16",
+    "@clerk/nextjs": "^6.10.6",
+    "@google/generative-ai": "^0.21.0",
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^8.17.14",
+    "axios": "^1.7.9",
     "leva": "^0.9.35",
     "microsoft-cognitiveservices-speech-sdk": "^1.35.0",
     "next": "14.1.0",
     "openai": "^4.28.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^9.0.3",
     "three": "^0.161.0",
     "zustand": "^4.5.1"
   },
@@ -25,6 +29,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.7.3"
   }
 }
