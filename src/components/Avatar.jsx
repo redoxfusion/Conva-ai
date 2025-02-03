@@ -50,15 +50,24 @@ export function Avatar({ Avatar, ...props }) {
     nextBlink();
     return () => clearTimeout(blinkTimeout);
   }, []);
-
   useEffect(() => {
+    let interval = null;
+
     if (loading) {
       setAnimation("Idle");
     } else if (currentMessage) {
-      setAnimation(randInt(0, 1) ? "Talking" : "Talking1");
+      setAnimation("Talking1"); // Start with Talking1
+
+      interval = setInterval(() => {
+        setAnimation("Talking1"); // Keeps setting Talking1 to refresh animation
+      }, 0); // Adjust interval time as needed
     } else {
       setAnimation("Idle");
     }
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
   }, [currentMessage, loading]);
 
   useFrame(({ camera }) => {

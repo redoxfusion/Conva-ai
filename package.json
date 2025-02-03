@@ -11,10 +11,12 @@
   "dependencies": {
     "@clerk/nextjs": "^6.10.6",
     "@google/generative-ai": "^0.21.0",
+    "@heroicons/react": "^2.2.0",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
     "axios": "^1.7.9",
     "leva": "^0.9.35",
+    "lucide-react": "^0.474.0",
     "microsoft-cognitiveservices-speech-sdk": "^1.35.0",
     "next": "14.1.0",
     "openai": "^4.28.0",

@@ -18,9 +18,13 @@ export default function Dashboard() {
         <div className="bg-gradient-to-b from-blue-400 to-white shadow-lg rounded-xl p-8 flex items-center justify-between">
           <div className="text-white font-bold text-2xl">I AM HERE TO HELP YOU!!</div>
           <div className="flex flex-col items-center">
-            <button className="bg-white p-4 rounded-full shadow-lg">
+
+          <Link href="/aiAssistent">
+          <button className="bg-white p-4 rounded-full shadow-lg">
               🎤
             </button>
+            </Link>
+            
           </div>
           <img src="/charachter 1.png" alt="Assistant" className="w-48" />
         </div>
@@ -29,11 +33,15 @@ export default function Dashboard() {
         <div className="grid grid-cols-2 gap-6 mt-8">
           <div className="bg-gradient-to-b from-blue-400 to-white shadow-lg rounded-xl p-6 text-center">
             <p className="text-white text-xl font-bold">Analyze Your Document</p>
+            <Link href="/doc-analyzer">
             <button className="mt-4 bg-white px-4 py-2 rounded-full shadow-lg">GO →</button>
+            </Link>
           </div>
           <div className="bg-gradient-to-b from-blue-400 to-white shadow-lg rounded-xl p-6 text-center">
             <p className="text-white text-xl font-bold">Wanna Chat?</p>
+            <Link href="/chatBot">
             <button className="mt-4 bg-white px-4 py-2 rounded-full shadow-lg">GO →</button>
+            </Link>
             <img src="/character 2.png" alt="Assistant" className="w-48" />
           </div>
         </div>
