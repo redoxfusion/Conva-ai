@@ -1,5 +1,4 @@
 
-import { Avatar } from "/Users/khubaib/Documents/user manual/Convaaireal/src/components/Avatar";
 import { PassThrough } from "stream";
 import axios from "axios";
 
